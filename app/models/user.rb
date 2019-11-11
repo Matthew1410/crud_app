@@ -5,5 +5,4 @@ class User < ApplicationRecord
             length: { minimum: 5 }
   validates :email,
             format: { with: URI::MailTo::EMAIL_REGEXP }
-  validates :
 end
