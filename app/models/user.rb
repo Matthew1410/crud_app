@@ -1,9 +1,9 @@
 class User < ApplicationRecord
-  has_many :microposts
+  has_many :micropost
   validates :name,
             presence: true,
-            length: { minimum: 5 }
+            length: { maximum: 140 }
   validates :email,
             format: { with: URI::MailTo::EMAIL_REGEXP }
-  validates :
+  
 end
