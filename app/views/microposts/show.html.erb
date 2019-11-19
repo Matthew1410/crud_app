@@ -12,7 +12,7 @@
 
 <p>
   <strong>Posted by:</strong>
-  <%= @micropost.user %>
+  <%= @micropost.user.name %>
 </p>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
